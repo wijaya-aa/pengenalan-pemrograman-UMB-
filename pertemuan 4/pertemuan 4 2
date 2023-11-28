@@ -1,0 +1,14 @@
+#buatlah coding untuk menghitung luas lingkaran dan bujur sangkar, dimana jari jari dan isi diiputkan oleh user
+jari_jari=input("masukkan jari-jari")
+sisi=input("masukkan sisi")
+v= 3.14
+
+#lingkaran
+print("luas lingkaran:", v*int(jari_jari)*int(jari_jari))
+
+#bujur sangkar
+print("luas bujur sangkar",int(sisi)*int(sisi))
+
+
+
+

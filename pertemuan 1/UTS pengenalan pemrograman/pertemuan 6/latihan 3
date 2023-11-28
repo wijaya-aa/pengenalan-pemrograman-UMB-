@@ -1,0 +1,9 @@
+tinggi_badan= int(input("masukkan tinggi badan anda="))
+rumus_berat_badan= tinggi_badan- 100
+ 
+if rumus_berat_badan > 60 :
+    print("Gemuk")
+
+else:
+    print("Kurus")
+

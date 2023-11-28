@@ -1,0 +1,39 @@
+import datetime as waktu 
+
+
+a= 4
+b= 3
+c= 2
+sks=3 
+jumlah_sks_mm= 3
+jumlah_sks_pengenalan= 3
+jumlah_sks= int(jumlah_sks_mm) + int(jumlah_sks_pengenalan)
+
+nilai_matematika= input("masukan nilai matematika")
+nilai_logika= input("masukan nilai logika")
+
+total_nilai= int(nilai_matematika) * int(jumlah_sks_mm) + int(nilai_logika) * int(jumlah_sks_pengenalan)
+
+
+indeks_prestasi= int(total_nilai) / int(jumlah_sks)
+
+hari_ini= waktu.date.today()
+
+print("LEMBAR HASIL STUDI")
+print("Nama : Egi Putu Wijaya")
+print("Npm : 2355201078")
+
+print("------------------------------------") 
+print("A :",a)
+print("B :",b)
+print("C :",c)
+print("SKS :", sks)
+
+print("1.   Logika Matematika :",jumlah_sks_mm,"sks","\n","Nilai Logika Matematika :",nilai_matematika )
+print("2.   Pemrograman :",jumlah_sks_pengenalan,"sks","\n","Nilai Pemrograman :",nilai_logika)
+print("Total Nilai :",total_nilai)
+print("Indeks Prestasi :",indeks_prestasi)
+
+print("\n")
+print(hari_ini)
+print("Prodi : Teknik Indormatika")

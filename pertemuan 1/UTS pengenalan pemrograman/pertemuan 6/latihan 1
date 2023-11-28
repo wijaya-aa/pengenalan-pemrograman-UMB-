@@ -1,0 +1,16 @@
+
+harga_sabun= int(input("masukkan harga sabun = Rp"))
+harga_sampo= int(input("masukkan harga sampo = Rp"))
+harga_minyak= int(input("masukkan harga minyak = Rp"))
+
+total_harga= harga_sabun + harga_sampo + harga_minyak
+
+if total_harga >= 150000 :
+    diskon= total_harga * (10/100)
+    print(diskon)
+    print(f"SELAMAT!!!, anda mendapatkan diskon 10%")
+    print(f"total bayar Rp {total_harga - diskon}")
+
+else: 
+    print(f"permen + Rp {total_harga}")
+

@@ -1,0 +1,26 @@
+#Buatlah coding dimana nama karyawan, gaji pokok dan tunjangan diinputkan oleh user.
+#Hitung jumlah gaji bersih yang diterima oleh karyawan tersebut.
+#Jika gaji kotor (gaji pokok dan tunjangan) lebih dari Rp 5.000.000, maka dikenakan
+#pajak 5% dari gaji kotor dan BPJS 3% dari gaji kotor.
+#Jika gaji kotor (gaji pokok dan tunjangan) kurang Rp 5.000.000, maka dikenakan pajak
+#3% dari gaji kotor dan BPJS 1% dari gaji kotor.
+nama= input("masukan nama anda")
+gaji= int(input("masukan jumlah gaji = Rp"))
+tunjangan =int(input("masukan jumlah tunjangan = Rp"))
+total= gaji + tunjangan
+
+if total > 5000000 :
+    pajak_dan_bpjs= total * (8/100)
+    sisa = total - pajak_dan_bpjs
+
+    print(f" pajak dan bpjs = Rp{pajak_dan_bpjs}")
+    print(f" gaji yang anda dapatkan pada bulan ini = Rp {sisa}")
+
+elif total < 5000000 :
+    pajak_dan_bpjs= total * (4/100)
+    sisa = total - pajak_dan_bpjs
+
+    print(f" pajak dan bpjs = Rp{pajak_dan_bpjs}")
+    print(f" gaji yang anda dapatkan pada bulan ini = Rp {sisa}") 
+
+

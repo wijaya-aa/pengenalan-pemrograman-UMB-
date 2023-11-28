@@ -1,0 +1,6 @@
+sisi=input("masuukan sisi")
+jari_jari=input("masukkan jari_jari")
+luas_lingkaran= 3.14 *int(jari_jari)*int(jari_jari)
+luas_bujur_sangkar= float(sisi)*float(sisi)
+print("luas lingkaran adalah",int(luas_lingkaran))
+print("luas bujur sangkar adalah", float(luas_bujur_sangkar))

@@ -1,0 +1,7 @@
+nama= input("masukan nama anda")
+tanggal=input("masukan tanggal lahir anda ")
+alamat=input("masukan alamat anda")
+
+print("hallo nama saya adalah",nama)
+print("saya lahir pada tanggal",tanggal)
+print("alamat saya adalah di",alamat) 

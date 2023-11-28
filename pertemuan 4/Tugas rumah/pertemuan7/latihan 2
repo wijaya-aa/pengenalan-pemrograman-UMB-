@@ -1,0 +1,9 @@
+#Buatlah coding untuk menentukan bilangan genap dan bilangan ganjil. Angka diinputkan oleh user
+
+bilangan= int(input("masukan bilangan = "))
+
+if bilangan %2 == 0 :
+    print(f"{bilangan} itu ada genap")
+
+elif bilangan  %2 == 1 :
+    print(f"{bilangan} itu adalah ganjil")

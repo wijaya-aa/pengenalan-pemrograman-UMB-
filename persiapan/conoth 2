@@ -1,0 +1,15 @@
+#cara menghitung luas segitiga
+
+#1.     Kita masukkan variabel dan data/nilai sesuai keinginan kita misalnya dengan menggunakan input user misalnya:
+alas= float(input("masukkan alas segitiga")) 
+#menggunakan float dikarenakan kira casting data hal ini disebabkan bahwa input dari user itu sifatnya string dan bahwa string tidak bisa dikalikan dengan string juga
+tinggi= float(input("masukkan tinggi segitiga"))
+
+#2.     Selanjutnya kita memasukkan rumus atau algoritma yang akan kita gunakan dalam menentukan luas segitiga
+#tentunya dengan menggunakan variabel dan nilai dan juga kita memasukkan "/"sebagai bagi karena rumus segitiga adalah setengah alas kali tinggi
+rumus_segitiga= alas * tinggi / 2
+
+#3.     nah setelah itu kita printkan "rumus_segitiga" yang menjadi sebuah variabel agar dapat ditampilkan
+print("luas segitiga yang didapatkan adalah :",rumus_segitiga)
+
+

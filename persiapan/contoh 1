@@ -1,0 +1,44 @@
+#pembuatan program sederhana untuk menghitung umur
+#1.     kita mengimpor tanggal dan waktu kemudian dimisalkan tanggal dan waktu menjadi waktu
+import datetime as waktu 
+
+#2.     Kemudian kita membuat input untuk user agar user bisa memasukkan tanggal,bulan,tahun lahirnya
+#       Disini kita menggunakan casting data menggunakan "int" dikarenakan inputan user itu bersifat string dan kita tau bahwa
+#       bahwa string tidak bisa dikalikan atau dijumlahkan makan kita casting data menajdi integer
+tanggal= int(input("masukkan tanggal lahir anda"))
+bulan= int(input("masukkan bulan lahir anda"))
+tahun= int(input("masukkan tahun lahir anda"))
+
+#3.     Selanjutnya disini kita membuat variabel tanggal lahir dengan menggunakan datetime yang sudah kita impor menjadi "waktu" 
+#       beserta kita masukkan didalam kurung datetime yaitu tahun,bulan,tanggal mengikuti petunjuk dari kurung tersebut
+tanggal_lahir= waktu.date(tahun,bulan,tanggal)
+
+#4.     Berikutnya kita menampilkan tanggal lahir dari user dengan menggunakan "print"
+print("tanggal lahir anda adalah :",tanggal_lahir)
+
+#5.     Selanjutnya untuk menampilkan harinya kita menggunakan format kemudian didalam format tersebut kita beri kurung kurawal untuk data
+#       Nah, didalam kurung kurawal tersebut kita letakkan variabel tanggal lahir agar bisa ditampilkan diberi titik dua untuk meletakkan syntax
+#       syntax "%A" karena syntax ini kan menampilkan hari sesuai dengan tanggal lahir yang diiunputkan oleh user
+print(f"hari nya adalah {tanggal_lahir:%A}")
+
+#6.     Selanjutnya kita memberikan print "\n" agar dapat membuat newline
+print("\n")
+
+#7.     Untuk selanjutnya kita akan membuat berapa usia user sekarang dengan membuat variabel hari ini
+#       oleh karena itu kita kembali mengimpor datetime yang telah kita misalkan menjadi waktu
+#       Kemudian waktu tersebut kita kalikan/format dengan "date"untuk mengambil hanya tanggal saja dan lupa kita kalikan/format dengan today
+#       agar menampilkan tanggal sekarang
+hari_ini= waktu.date.today()
+
+#8.     selanjutnya kita menghitung jumlah hari dengan cara kita mengurangkan variabel hari_ini dengan tanggal_lahir 
+#       (hari_ini - tanggal_lahir)
+jumlah_hari= hari_ini - tanggal_lahir
+
+#9.     Kemudian kita menjadi berapa tahun usianya
+#       kita buat variabel umur_tahun dengan data jumlah_hari dikali atau diformat days karena kita mencari jumlah hari 
+#       kemudian kita menggunakan floor division agar bisa mendapatkan hasil bagi kamudian dibulatkan ke nilai terdekat
+umur_tahun= jumlah_hari.days // 365
+
+#10.    Terakhir kita printkan hasil dari variabel umur tahun tadi, gara user dapat melihat umur sekarang
+print("umur anda saat ini adalah",umur_tahun,"tahun")
+

@@ -1,0 +1,8 @@
+nama= input("masukkan nama anda")
+jenis_kelamin = input("masukkan jenis kelamin pria/wanita= ")
+
+if jenis_kelamin =="pria"  :
+    print(f"Hallo Bro {nama}")
+
+else:
+    print(f"Hallo Sis {nama}")
